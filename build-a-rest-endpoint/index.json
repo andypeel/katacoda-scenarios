@@ -38,10 +38,9 @@
       "text": "finish.md"
     },
     "assets": {
-      "foo": [
-        {"file": "*", "target": "/all1"},
-        {"file": "**", "target": "/all2"},
-        {"file": "**/*.*", "target": "/all3"}
+      "service": [
+        {"file": "**", "target": "/allA"},
+        {"file": "**", "target": "~/allB"}
       ]
     }
   },
