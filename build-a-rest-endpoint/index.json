@@ -42,6 +42,11 @@
         {"file": "*", "target": "/all1"},
         {"file": "**", "target": "/all2"},
         {"file": "**/*.*", "target": "/all3"}
+      ],
+      "host01": [
+        {"file": "*", "target": "/all4"},
+        {"file": "**", "target": "/all5"},
+        {"file": "**/*.*", "target": "/all6"}
       ]
     }
   },
