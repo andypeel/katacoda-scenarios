@@ -38,7 +38,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "service": [
+      "foo": [
         {"file": "**", "target": "/allA"},
         {"file": "**", "target": "~/allB"}
       ]
