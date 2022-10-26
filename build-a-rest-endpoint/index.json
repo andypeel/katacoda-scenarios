@@ -48,6 +48,10 @@
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/assets/"
   },
+  "interface": {
+    "layout": "ide",
+    "editorpath": "/root/assets/"
+  },
   "backend": {
     "imageid": "ubuntu"
   }
