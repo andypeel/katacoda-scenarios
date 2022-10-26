@@ -38,8 +38,12 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
-        { "file": "*", "target": "~/" }
+      "service": [
+        {
+          "file": "**",
+          "target": "/assets",
+          "chmod": "+w"
+        }
       ]
     }
   },
