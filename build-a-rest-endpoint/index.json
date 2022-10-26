@@ -31,7 +31,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "initialise.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -48,6 +49,6 @@
     "uieditorpath": "/root/src/"
   },
   "backend": {
-    "imageid": "openjdk:15"
+    "imageid": "ubuntu"
   }
 }
