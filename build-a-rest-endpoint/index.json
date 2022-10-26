@@ -44,8 +44,7 @@
         {"file": "**/*.*", "target": "/all3"}
       ]
     }
-  }
-},
+  },
   "environment": {
     "hideintro": false,
     "uilayout": "editor-terminal",
