@@ -46,7 +46,7 @@
   "environment": {
     "hideintro": false,
     "uilayout": "editor-terminal",
-    "uieditorpath": "~/assets"
+    "uieditorpath": "/root/assets/"
   },
   "backend": {
     "imageid": "ubuntu"
