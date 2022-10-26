@@ -39,8 +39,9 @@
     },
     "assets": {
       "foo": [
-        {"file": "**", "target": "/allA"},
-        {"file": "**", "target": "~/allB"}
+        {"file": "*", "target": "/all1"},
+        {"file": "**", "target": "/all2"},
+        {"file": "**/*.*", "target": "/all3"}
       ]
     }
   },
