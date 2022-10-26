@@ -40,6 +40,6 @@ Press <kbd>Ctrl</kbd>+<kbd>C</kbd> on the keyboard. Or just click this:
 
     8. Test the software by opening this webpage:
 
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/cats
+{{TRAFFIC_HOST1_8080}}/cats
 
     9. You can see the new "dislikes" field in the JSON response.

@@ -12,13 +12,13 @@
 
     3. Test the software:
 
-* Send a correct password https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/user/authenticate?email=bob&password=passw0rd
-* Send an incorrect password https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/user/authenticate?email=bob&password=wrong
+* Send a correct password {{TRAFFIC_HOST1_8080}}/user/authenticate?email=bob&password=passw0rd
+* Send an incorrect password {{TRAFFIC_HOST1_8080}}/user/authenticate?email=bob&password=wrong
 
 
     4. Test via the "dummy" frontend:
 
-Open https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+Open {{TRAFFIC_HOST1_8080}}/
 
 
     5. Now change the software - e.g. add other user accounts so more people can log in.
@@ -38,4 +38,4 @@ Press <kbd>Ctrl</kbd>+<kbd>C</kbd> on the keyboard. Or just click this:
 
     8. Test you can log in with the login details of the users you just added
 
-Open https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+Open {{TRAFFIC_HOST1_8080}}/

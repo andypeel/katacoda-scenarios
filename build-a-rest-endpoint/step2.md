@@ -29,9 +29,7 @@ It will be ready to take requests once you see a line that looks similar to this
 
 Do this by opening the following webpage:
 
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/cats
-
-NEW FOR KILLERCODA: https://{{TRAFFIC_HOST1_8080}}/cats
+{{TRAFFIC_HOST1_8080}}/cats
 
 
     4. Have a look at where this data is coming from in the code
