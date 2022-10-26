@@ -38,7 +38,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [
+      "foo": [
         {"file": "*", "target": "/all1"},
         {"file": "**", "target": "/all2"},
         {"file": "**/*.*", "target": "/all3"}
