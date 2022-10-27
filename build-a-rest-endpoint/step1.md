@@ -7,6 +7,8 @@ This makes it easier to read the results of calling a REST API.
 Go to: https://chrome.google.com/webstore/search/JSON%20Viewer
 and then click the top resulting JSON Viewer extension, from *tulios*. Then click "Add to Chrome" to install it.
 
+The logo looks like this: ![logo](https://lh3.googleusercontent.com/_t_LA1P8Vot6jUw1aH2OCtE9KLcf28Y6s9FSKb-wddK92dOGhhpvPbjKFa3p7wWrvHwtnane0pPZl9C3sipn0CKa=w128-h128-e365-rj-sc0x00ffffff)
+
 
 
     2. Have a look at a publically available API for getting pictures of cats
