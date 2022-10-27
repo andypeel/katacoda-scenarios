@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1a: Install the JSON Viewer plugin for Chrome",
+        "title": "Step 1 a: Install the JSON Viewer plugin for Chrome",
         "text": "step1a.md"
       },
       {
-        "title": "Step 1b: Try some APIs",
+        "title": "Step 1 b: Try some APIs",
         "text": "step1b.md"
       },
       {
