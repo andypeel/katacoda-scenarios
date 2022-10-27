@@ -1,5 +1,3 @@
-# Getting information about cats
-
 This tutorial contains source code for a working REST API endpoint to retrieve data about cats for the Cats4Life website.
 
 In the terminal type the following commands as you go through the steps. You can also just click the *black areas* and the corresponding commands will be run in the Terminal window to the right.
@@ -32,6 +30,6 @@ Do this by opening the following webpage:
 {{TRAFFIC_HOST1_8080}}/cats
 
 
-    4. Have a look at where this data is coming from in the code
+    4. Have a look at where this data is coming from in the code. Use the file explorer in the editor to navigate to this file:
 
-`main/java/tutorial/rest/resources/CatResource.java`{{open}}
+`assets/src/main/java/tutorial/rest/resources/CatResource.java`

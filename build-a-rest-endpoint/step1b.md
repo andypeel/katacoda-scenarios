@@ -12,6 +12,6 @@ This publically available API provides pictures of cats: https://api.thecatapi.c
 
 
 # The world is your oyster
-A list of some other APIs that you can try calling: https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+Here's a list of some other APIs that you can try calling: https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 E.g. ImgFlip's meme generator: https://api.imgflip.com/get_memes
