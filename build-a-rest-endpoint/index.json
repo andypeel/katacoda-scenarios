@@ -43,9 +43,8 @@
       ]
     }
   },
-  "environment": {
-    "hidefinish": true,
-    "uilayout": "editor-terminal"
+  "interface": {
+    "layout": "ide"
   },
   "backend": {
     "imageid": "ubuntu"
