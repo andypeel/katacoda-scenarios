@@ -1,0 +1,52 @@
+{
+  "title": "Hands-on HTML",
+  "description": "A very simple tutorial demonstrating how to create and change HTML",
+  "difficulty": "Beginner",
+  "time": "More than 1 hour",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1: Install the JSON Viewer plugin for Chrome",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2: Getting information about cats",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "foreground": "initialise.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "**", "target": "~/assets"}
+      ]
+    }
+  },
+  "interface": {
+    "layout": "ide"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
