@@ -1,0 +1,326 @@
+
+<html>
+<head>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .fire {
+            font-size: 24px;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            margin: 3em auto 0 auto;
+            position: relative;
+            width: 10em;
+            height: 12em;
+        }
+        .flame {
+            animation: rise 1s ease-in infinite;
+            background-image: linear-gradient(-25deg, orange, rgba(255, 0, 0, 0.55));
+            border-radius: 50%;
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            width: 5em;
+            height: 5em;
+        }
+        .flame:nth-of-type(1) {
+            animation-delay: 0.23543s;
+            left: calc((100% - 5em) * 0);
+            opacity: 0.517663;
+        }
+        .flame:nth-of-type(2) {
+            animation-delay: 0.91234s;
+            left: calc((100% - 5em) * 0.02);
+        }
+        .flame:nth-of-type(3) {
+            animation-delay: 0.0125s;
+            left: calc((100% - 5em) * 0.04);
+            opacity: 0.5452;
+        }
+        .flame:nth-of-type(4) {
+            animation-delay: 0.47481s;
+            left: calc((100% - 5em) * 0.06);
+        }
+        .flame:nth-of-type(5) {
+            animation-delay: 0.65245s;
+            left: calc((100% - 5em) * 0.08);
+            opacity: 0.32151;
+        }
+        .flame:nth-of-type(6) {
+            animation-delay: 0.75425s;
+            left: calc((100% - 5em) * 0.1);
+        }
+        .flame:nth-of-type(7) {
+            animation-delay: 0.252435s;
+            left: calc((100% - 5em) * 0.12);
+            opacity: 0.98375;
+        }
+        .flame:nth-of-type(8) {
+            animation-delay: 0.76546s;
+            left: calc((100% - 5em) * 0.14);
+        }
+        .flame:nth-of-type(9) {
+            animation-delay: 0.91234s;
+            left: calc((100% - 5em) * 0.16);
+            opacity: 0.62342;
+        }
+        .flame:nth-of-type(10) {
+            animation-delay: 0.5431s;
+            left: calc((100% - 5em) * 0.18);
+        }
+        .flame:nth-of-type(11) {
+            animation-delay: 0.45132s;
+            left: calc((100% - 5em) * 0.2);
+            opacity: 0.2345;
+        }
+        .flame:nth-of-type(12) {
+            animation-delay: 0.35124s;
+            left: calc((100% - 5em) * 0.22);
+        }
+        .flame:nth-of-type(13) {
+            animation-delay: 0.75123s;
+            left: calc((100% - 5em) * 0.24);
+            opacity: 0.12345;
+        }
+        .flame:nth-of-type(14) {
+            animation-delay: 0.54534s;
+            left: calc((100% - 5em) * 0.26);
+        }
+        .flame:nth-of-type(15) {
+            animation-delay: 0.52452s;
+            left: calc((100% - 5em) * 0.28);
+            opacity: 0.4225;
+        }
+        .flame:nth-of-type(16) {
+            animation-delay: 0.745634s;
+            left: calc((100% - 5em) * 0.3);
+        }
+        .flame:nth-of-type(17) {
+            animation-delay: 0.63457s;
+            left: calc((100% - 5em) * 0.32);
+            opacity: 0.7568;
+        }
+        .flame:nth-of-type(18) {
+            animation-delay: 0.14526s;
+            left: calc((100% - 5em) * 0.34);
+        }
+        .flame:nth-of-type(19) {
+            animation-delay: 0.78562s;
+            left: calc((100% - 5em) * 0.36);
+            opacity: 0.3456;
+        }
+        .flame:nth-of-type(20) {
+            animation-delay: 0.345235s;
+            left: calc((100% - 5em) * 0.38);
+        }
+        .flame:nth-of-type(21) {
+            animation-delay: 0.23352s;
+            left: calc((100% - 5em) * 0.4);
+            opacity: 0.32456;
+        }
+        .flame:nth-of-type(22) {
+            animation-delay: 0.13456s;
+            left: calc((100% - 5em) * 0.42);
+        }
+        .flame:nth-of-type(23) {
+            animation-delay: 0.753456s;
+            left: calc((100% - 5em) * 0.44);
+            opacity: 0.12515;
+        }
+        .flame:nth-of-type(24) {
+            animation-delay: 0.141256s;
+            left: calc((100% - 5em) * 0.46);
+        }
+        .flame:nth-of-type(25) {
+            animation-delay: 0.76586s;
+            left: calc((100% - 5em) * 0.48);
+            opacity: 0.72573;
+        }
+        .flame:nth-of-type(26) {
+            animation-delay: 0.452411s;
+            left: calc((100% - 5em) * 0.5);
+        }
+        .flame:nth-of-type(27) {
+            animation-delay: 0.21456s;
+            left: calc((100% - 5em) * 0.52);
+            opacity: 0.7362;
+        }
+        .flame:nth-of-type(28) {
+            animation-delay: 0.84762s;
+            left: calc((100% - 5em) * 0.54);
+        }
+        .flame:nth-of-type(29) {
+            animation-delay: 0.56124s;
+            left: calc((100% - 5em) * 0.56);
+            opacity: 0.23462;
+        }
+        .flame:nth-of-type(30) {
+            animation-delay: 0.56621s;
+            left: calc((100% - 5em) * 0.58);
+        }
+        .flame:nth-of-type(31) {
+            animation-delay: 0.7721414s;
+            left: calc((100% - 5em) * 0.6);
+            opacity: 0.73366;
+        }
+        .flame:nth-of-type(32) {
+            animation-delay: 0.435235s;
+            left: calc((100% - 5em) * 0.62);
+        }
+        .flame:nth-of-type(33) {
+            animation-delay: 0.13445s;
+            left: calc((100% - 5em) * 0.64);
+            opacity: 0.123516;
+        }
+        .flame:nth-of-type(34) {
+            animation-delay: 0.87963s;
+            left: calc((100% - 5em) * 0.66);
+        }
+        .flame:nth-of-type(35) {
+            animation-delay: 0.44572s;
+            left: calc((100% - 5em) * 0.68);
+            opacity: 0.436264;
+        }
+        .flame:nth-of-type(36) {
+            animation-delay: 0.3526371s;
+            left: calc((100% - 5em) * 0.7);
+        }
+        .flame:nth-of-type(37) {
+            animation-delay: 0.34167s;
+            left: calc((100% - 5em) * 0.72);
+            opacity: 0.12414;
+        }
+        .flame:nth-of-type(38) {
+            animation-delay: 0.09870s;
+            left: calc((100% - 5em) * 0.74);
+        }
+        .flame:nth-of-type(39) {
+            animation-delay: 0.736452s;
+            left: calc((100% - 5em) * 0.76);
+            opacity: 0.64251;
+        }
+        .flame:nth-of-type(40) {
+            animation-delay: 0.123534s;
+            left: calc((100% - 5em) * 0.78);
+        }
+        .flame:nth-of-type(41) {
+            animation-delay: 0.86578s;
+            left: calc((100% - 5em) * 0.8);
+            opacity: 0.26262;
+        }
+        .flame:nth-of-type(42) {
+            animation-delay: 0.66457s;
+            left: calc((100% - 5em) * 0.82);
+        }
+        .flame:nth-of-type(43) {
+            animation-delay: 0.4523511s;
+            left: calc((100% - 5em) * 0.84);
+            opacity: 0.3567;
+        }
+        .flame:nth-of-type(44) {
+            animation-delay: 0.41235346s;
+            left: calc((100% - 5em) * 0.86);
+        }
+        .flame:nth-of-type(45) {
+            animation-delay: 0.64536s;
+            left: calc((100% - 5em) * 0.88);
+            opacity: 0.9568;
+        }
+        .flame:nth-of-type(46) {
+            animation-delay: 0.1423345s;
+            left: calc((100% - 5em) * 0.9);
+        }
+        .flame:nth-of-type(47) {
+            animation-delay: 0.323123s;
+            left: calc((100% - 5em) * 0.92);
+            opacity: 0.13645;
+        }
+        .flame:nth-of-type(48) {
+            animation-delay: 0.123123s;
+            left: calc((100% - 5em) * 0.94);
+        }
+        .flame:nth-of-type(49) {
+            animation-delay: 0.3123132s;
+            left: calc((100% - 5em) * 0.96);
+            opacity: 0.51251;
+        }
+        .flame:nth-of-type(50) {
+            animation-delay: 0.12134s;
+            left: calc((100% - 5em) * 0.98);
+        }
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(0) scale(1);
+            }
+            25% {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-10em) scale(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="fire">
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+    <div class="flame"></div>
+</div>
+</body>
+</html>
