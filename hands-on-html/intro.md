@@ -1,6 +1,10 @@
 Welcome!
 
-You're about to spin up a brand new REST API, and then make some fun changes to it!
+You're about to make and change some HTML!
 
-The code you will be working with is running in the Cloud.
+The code you will be working with is running in the Cloud ☁️
 
+
+Start by opening the following webpage:
+
+{{TRAFFIC_HOST1_8080}}/
