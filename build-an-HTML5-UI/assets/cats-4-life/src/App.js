@@ -1,7 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import {useEffect} from "react";
 
 function App() {
+
+  var cats;
+
+  useEffect(() => {
+    fetch("https://aim.incubation.tech/cats", {
+      method: "GET"
+    })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          cats = data;
+        })
+        .catch((error) => console.error("Error:", error));
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">

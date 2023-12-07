@@ -10,6 +10,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
 	&& nvm install v20 \
 	&& cd assets/cats-4-life \
 	&& npm i \
-  	&& echo "Welcome to the tutorial, all the dependencies are installed, and you should be good to go!"
+  && echo "Welcome to the tutorial, all the dependencies are installed, and you should be good to go!"
+
+export DANGEROUSLY_DISABLE_HOST_CHECK=true
 
 npm start
