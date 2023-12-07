@@ -7,4 +7,4 @@ The code you will be working with is running in the Cloud ☁️
 
 Start by opening the following webpage:
 
-{{TRAFFIC_HOST1_8080}}/
+{{TRAFFIC_HOST1_3000}}/
