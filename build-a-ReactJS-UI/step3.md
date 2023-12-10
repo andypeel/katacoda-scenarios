@@ -9,9 +9,9 @@ const cat = { "name": "Luna", "age": 5, "breed": "Persian", "likes": "Chicken", 
 ```{{copy}}
 
 
-Before you can see any change in the web page, you'll need to change the HTML to ready from the variable.
+Before you can see any change in the web page, you'll need to change the HTML to read from the variable.
 
-You can reference properties by their name. You can see the property names in this Cat:
+You can reference properties by their name. You can see the property names in this Cat (i.e. name, age, breed, etc.):
 
 ```
 {
@@ -23,7 +23,11 @@ You can reference properties by their name. You can see the property names in th
 }
 ```
 
-Go through the HTML and replace all the concrete values for cat (like "Milo") with code to ready them from the variable (e.g. `{cat.name}`).
+Go through the HTML and replace all the concrete values for cat (like "Milo") with code to read them from the cat Object (e.g. `{cat.name}`).
+You should see Milo's details change to be Luna's details. Note some fields are used more than once.
+
+As you make code changes, notice in the terminal window that React is picking up your changes and pushing them to the web page. 
+You are "live editing" the page.
 
 Here's a longer example:
 
@@ -36,4 +40,4 @@ Here's a longer example:
 
 Go and check the web page, and observe the data is coming from the data held in the `cat` variable.
 
-Make sure youve changed every single field and you can see it reflected in the Card on the web page.
+Make sure you've changed every single field and you can see it reflected in the Card on the web page.
