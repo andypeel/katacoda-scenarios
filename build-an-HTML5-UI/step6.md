@@ -1,7 +1,7 @@
 # Javascript - Dynamic
 We can fetch data from a dynamic api by creating a new angular service and doing an HTTP request to receive the payload:
 You can check the response by calling:
-``http://aim.incubation.tech:8080/cats``
+``https://aim.incubation.tech/cats``
 
     5. Add the HttpClientModule in the app.module.ts. This module will allow us to do the HTTP request and retrieve data from the endpoint above.
 
