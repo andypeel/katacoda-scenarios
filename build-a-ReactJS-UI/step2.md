@@ -61,8 +61,3 @@ Follow the steps below to create the website content.
         </CardFooter>
     </Card>
 ```{{copy}}
-
-Use the card component by updating the app.component.html by adding the fallowing in the "content" div:
-`
-  <app-card></app-card>
-`{{copy}}

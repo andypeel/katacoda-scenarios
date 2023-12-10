@@ -1,71 +1,43 @@
-# Javascript - Dynamic
-We can fetch data from a dynamic api by creating a new angular service and doing an HTTP request to receive the payload:
-You can check the response by calling:
-``https://aim.incubation.tech/cats``
+# Javascript - Call an API to get the cat data
 
-    5. Add the HttpClientModule in the app.module.ts. This module will allow us to do the HTTP request and retrieve data from the endpoint above.
+Somewhere out there on the internet is an API that returns cat data.
 
-Import the module:
+Click this link to take a peek at it: https://aim.incubation.tech/cats
+
+The next step is to call this API endpoint to get a list of cats, and update our fron-end to use that data, instead of the mocked data. 
+
+The mocked data helped us build out the front-end without needing the API. Now it's time to plug in the API.
+
+Replace this block of code:
+
 ```
-import { HttpClientModule } from '@angular/common/http';
-```{{copy}}
-
-Update the imports:
-```  
-imports: [
-BrowserModule,
-HttpClientModule
-]
-```
-
-    6. Create a new service
-
-`ng g s card/card`{{execute}}
-
-The service should be imported added to the module providers in app.module.ts
-Import the service:
-```
-import{ CardService } from './card/card.service';
-```{{copy}}
-
-Module providers:
-```
-providers: [ CardService ],
+    const cats = [
+        { "name": "Luna", "age": 5, "breed": "Persian", "likes": "Chicken", "url":"https://cdn2.thecatapi.com/images/e4f.jpg" },
+        { "name": "Milo", "age": 3, "breed": "Bengal", "likes": "Chicken, Fish", "url":"https://cdn2.thecatapi.com/images/U3G5VhSBE.jpg" },
+        { "name": "Oliver", "age": 7, "breed": "Persian", "likes": "Fish, Chips", "url":"https://cdn2.thecatapi.com/images/5pp.jpg" },
+        { "name": "Bella", "age": 12, "breed": "Siamese", "likes": "Fish, Dogs", "url":"https://cdn2.thecatapi.com/images/MTU4NjA5NA.jpg" },
+        { "name": "Willow", "age": 1, "breed": "Savannah", "likes": "None", "url":"https://cdn2.thecatapi.com/images/VsxceZVop.jpg" }
+    ];
 ```
 
+with this code:
 
-    7. Update ``card.service.ts`` to recieve data from backend
 ```
-    private catsUrl = '/cats';
-//private imagesUrl = '/images/search';
-// https://docs.thecatapi.com/api-reference/images/images-search
+    const [cats, setCats] = useState(null);
 
-constructor(private http: HttpClient ) { }
+    useEffect(() => {
+        fetch("https://aim.incubation.tech/cats", {
+            method: "GET"
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                setCats(data);
+            })
+            .catch((error) => console.error("Error:", error));
+    }, []);
 
-getCats() {
-return this.http.get(this.catsUrl);
-}
-```{{copy}}
-
-
-   8. Update ``card.component.ts`` to request data from a service:
-Import the service:
+    if (cats === null) {
+        return;
+    }
 ```
-import { CardService } from './card.service';
-```{{copy}}
-
-Component scope:
-``` 
-cats: Array<any> = [];
-
-constructor(private cardService: CardService) { }
-
-ngOnInit(): void {
-this.cardService.getCats().subscribe((cats: any) => this.cats = cats);
-}
-```{{copy}}
-
-
-
-Bonus points for loading the cats images from an external resource.
-HINT: you can use the commented api.

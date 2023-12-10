@@ -1,4 +1,4 @@
-# Javascript
+# Javascript - Use a Mock
 
 Let's change the code to work with dynamic Cat data.
 
@@ -35,3 +35,5 @@ Here's a longer example:
 ``````
 
 Go and check the web page, and observe the data is coming from the data held in the `cat` variable.
+
+Make sure youve changed every single field and you can see it reflected in the Card on the web page.
