@@ -13,8 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 Update the imports:
 ```  
 imports: [
-    BrowserModule,
-    HttpClientModule
+BrowserModule,
+HttpClientModule
 ]
 ```
 
@@ -25,26 +25,26 @@ imports: [
 The service should be imported added to the module providers in app.module.ts
 Import the service:
 ```
- import{ CardService } from './card/card.service';
+import{ CardService } from './card/card.service';
 ```{{copy}}
 
 Module providers:
 ```
-  providers: [ CardService ],
+providers: [ CardService ],
 ```
 
 
     7. Update ``card.service.ts`` to recieve data from backend
 ```
     private catsUrl = '/cats';
-  //private imagesUrl = '/images/search';
-  // https://docs.thecatapi.com/api-reference/images/images-search
+//private imagesUrl = '/images/search';
+// https://docs.thecatapi.com/api-reference/images/images-search
 
-  constructor(private http: HttpClient ) { }
+constructor(private http: HttpClient ) { }
 
-  getCats() {
-    return this.http.get(this.catsUrl);
-  }
+getCats() {
+return this.http.get(this.catsUrl);
+}
 ```{{copy}}
 
 
@@ -56,13 +56,13 @@ import { CardService } from './card.service';
 
 Component scope:
 ``` 
-  cats: Array<any> = [];
+cats: Array<any> = [];
 
-  constructor(private cardService: CardService) { }
+constructor(private cardService: CardService) { }
 
-  ngOnInit(): void {
-    this.cardService.getCats().subscribe((cats: any) => this.cats = cats);
-  }
+ngOnInit(): void {
+this.cardService.getCats().subscribe((cats: any) => this.cats = cats);
+}
 ```{{copy}}
 
 

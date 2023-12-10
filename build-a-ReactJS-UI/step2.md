@@ -1,34 +1,65 @@
 # HTML
 Follow the steps below to create the website content.
-    1. Generate new angular component named card by running the fallowing angularcli command:
 
-`ng g c card`{{execute}}
+1. Navigate to `assets/cats-4-life/src` and open `Main.js` by clicking on it.
 
-    2. Update the html structure for the newly created component on the file card.component.html to include the fallowing html:
+2. Insert the Card HTML inbetween the `<SimpleGrid>` tags:
+
 ```
-<div class="card-container">
-    <div class="card">
-        <a href="#">
-            <div class="card-image">
-                <img src="https://cdn2.thecatapi.com/images/U3G5VhSBE.jpg" alt="cat-img" />
-            </div>
+    <Card key="Milo" >
+        <CardHeader>
+            <Flex spacing='4'>
+                <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
+                    <Avatar name="Milo" />
 
-            <div class="card-body">
-                <div class="card-breed">
-                    <time>BENGAL</time>
-                </div>
+                    <Box>
+                        <Heading size='sm'>Milo</Heading>
+                        <Text>Age: 2</Text>
+                    </Box>
+                </Flex>
+                <IconButton
+                    variant='ghost'
+                    colorScheme='gray'
+                    aria-label='See menu'
+                    icon={<BsThreeDotsVertical/>}
+                />
+            </Flex>
+        </CardHeader>
+        <CardBody>
+            <Text>
+                Breed: Bengal
+            </Text>
+            <Text>
+                Likes: Favourite food: Chicken, Fish
+            </Text>
+        </CardBody>
+        <Image
+            objectFit='cover'
+            src="https://cdn2.thecatapi.com/images/U3G5VhSBE.jpg"
+            alt='Chakra UI'
+            height={250}
+        />
 
-                <div class="card-title">
-                    <h3>Milo</h3>
-                </div>
-
-                <div class="card-excerpt">
-                    <p>Favourite food: Chicken, Fish</p>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
+        <CardFooter
+            justify='space-between'
+            flexWrap='wrap'
+            sx={{
+                '& > button': {
+                    minW: '136px',
+                },
+            }}
+        >
+            <Button flex='1' variant='ghost' leftIcon={<BiLike/>}>
+                Like
+            </Button>
+            <Button flex='1' variant='ghost' leftIcon={<BiChat/>}>
+                Comment
+            </Button>
+            <Button flex='1' variant='ghost' leftIcon={<BiShare/>}>
+                Share
+            </Button>
+        </CardFooter>
+    </Card>
 ```{{copy}}
 
 Use the card component by updating the app.component.html by adding the fallowing in the "content" div:

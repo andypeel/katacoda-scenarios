@@ -1,79 +1,37 @@
-# CSS
-    2. Add css in the card.component.css to align the card in the middle of the screen:
-```
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-}
+# Javascript
+
+Let's change the code to work with dynamic Cat data.
+
+Let's create a new variable that will mock what a backend response will be like. Add the below before the `return` keyword in `Main.js`
+
+``` 
+const cat = { "name": "Luna", "age": 5, "breed": "Persian", "likes": "Chicken", "url":"https://cdn2.thecatapi.com/images/e4f.jpg" };
 ```{{copy}}
 
 
-    3. Set image withing the card bounderies
+Before you can see any change in the web page, you'll need to change the HTML to ready from the variable.
+
+You can reference properties by their name. You can see the property names in this Cat:
+
 ```
-.card {
-    width: 300px;
-    margin: 30px auto;
-    background-color: white;
-    box-shadow: 0px 5px 20px #555;
+{
+    "name": "Milo",
+    "age": 3,
+    "breed": "Bengal",
+    "likes": "Chicken, Fish",
+    "url":"https://cdn2.thecatapi.com/images/U3G5VhSBE.jpg"
 }
-
-.card-body {
-    text-align: center;
-    padding: 15px 20px;
-    box-sizing: border-box;
-}
-
-.card-image {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-}
-
-img {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: grayscale(1);
-    transition-property: filter width;
-    transition-duration: .3s;
-}
-```{{copy}}
-
-    4. Additional styles to make the card nicer
 ```
-.card a {
-    color: #333;
-    text-decoration: none;
-}
 
-.card a:hover img {
-    width: 100%+10%;
-    filter: grayscale(0);
-}
+Go through the HTML and replace all the concrete values for cat (like "Milo") with code to ready them from the variable (e.g. `{cat.name}`).
 
+Here's a longer example:
 
-.card-breed {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+```
+<Box>
+    <Heading size='sm'>{cat.name}</Heading>
+    <Text>Age: {cat.age}</Text>
+</Box>
+``````
 
-.card-title,
-.card-exceprt {
-    font-family: 'Playfair Display', serif;
-}
-
-.card-breed,
-.card-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.card-breed,
-.card-excerpt {
-    color: #777;
-}
-```{{copy}}
+Go and check the web page, and observe the data is coming from the data held in the `cat` variable.

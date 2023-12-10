@@ -1,8 +1,13 @@
 # Javascript
-    6. To see the content updating let's create a new variable that will mock what a backend response will be like.
+
+Let's change the code to work with more Cat data.
+
+Let's create a new variable that will mock what a backend response will be like. Add the below before the `return` keyword in `Main.js`
+
+The web page will update, but you won't see a visual difference, as all we've done is add the variable.
 
 ``` 
-cats: Array<any> = [
+const cats = [
     { "name": "Luna", "age": 5, "breed": "Persian", "likes": "Chicken", "url":"https://cdn2.thecatapi.com/images/e4f.jpg" }, 
     { "name": "Milo", "age": 3, "breed": "Bengal", "likes": "Chicken, Fish", "url":"https://cdn2.thecatapi.com/images/U3G5VhSBE.jpg" }, 
     { "name": "Oliver", "age": 7, "breed": "Persian", "likes": "Fish, Chips", "url":"https://cdn2.thecatapi.com/images/5pp.jpg" }, 
