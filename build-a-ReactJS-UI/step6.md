@@ -45,6 +45,9 @@ with this code:
 
 The new code uses the `fetch` function to dynamically retrieve a bunch of cat data and store it in state.
 
+Try resizing the browser window and notice how the page is responsive: it adjusts the layout based 
+on how much space is available. 
+
 Congratulations, you have now finished building the Cats4Life app, using the Cat4Life REST API endpoint!
 
 What's next?
