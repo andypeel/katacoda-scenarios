@@ -2,7 +2,7 @@
 
 Let's change the code to work with dynamic Cat data.
 
-Let's create a new variable that will mock what a backend response will be like. Add the below before the `return` keyword in `Main.js`
+Let's create a new variable that will mock what a backend response will be like. Add the below before the `return` keyword in `Main.js`  - i.e. at line 7.
 
 ``` 
 const cat = { "name": "Luna", "age": 5, "breed": "Persian", "likes": "Chicken", "url":"https://cdn2.thecatapi.com/images/e4f.jpg" };

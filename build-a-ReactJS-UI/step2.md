@@ -62,5 +62,7 @@ Follow the steps below to create the website content.
         </Card>
 ```{{copy}}
 
-3. Go to the tab displaying the app. React normally updates the web page for each change you make to the source code, but this doesn't seem to work
-on Killercoda, so you will probably have to refresh the page to see your changes.
+Go to the tab displaying the app. React normally updates the web page for each change you make to the source code, but this doesn't seem to work
+on Killercoda, so you will need to refresh the page to see your changes.
+
+You should see your first Card, displaying a single cat. 
